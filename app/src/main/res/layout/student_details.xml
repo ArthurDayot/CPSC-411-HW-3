@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/display_string_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Detailed View"
+        android:textAlignment="center"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Student First Name: "/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Student Last Name: "/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="CWID: "/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2">
+            <EditText
+                android:id="@+id/p_fname_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/p_lname_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/p_cwid_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Course Name"/>
+            <TextView
+                android:id="@+id/p_course_name_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:id="@+id/course_list_id">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Course Grade"/>
+            <TextView
+                android:id="@+id/p_course_grade_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
